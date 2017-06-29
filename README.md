@@ -1,22 +1,25 @@
-[![Build Status](https://travis-ci.org/nspragg/http-transport.svg)](https://travis-ci.org/nspragg/http-transport) [![Coverage Status](https://coveralls.io/repos/github/nspragg/http-transport/badge.svg?branch=master)](https://coveralls.io/github/nspragg/http-transport?branch=master)
+[![Build Status](https://travis-ci.org/nspragg/http-transport-wreck.svg)](https://travis-ci.org/nspragg/http-transport-wreck) [![Coverage Status](https://coveralls.io/repos/github/nspragg/http-transport-wreck/badge.svg?branch=master)](https://coveralls.io/github/nspragg/http-transport-wreck?branch=master)
 
 # HttpTransport
 
-> A flexible, modular REST client built for ease-of-use and resilience
+> Wreck Transport implementation
 
 ## Installation
 
 ```
-npm install --save http-transport
+npm install --save http-transport-wreck
 ```
 
 ## Usage
 
 ```js
-const url = 'http://example.com/';
-const client = require('http-transport').createClient();
+Use the Wreck HTTP client: 
 
-client
+const url = 'http://example.com/';
+const HttpTransport = require('http-transport');
+const Wreck = require('http-transport-wreck');
+
+HttpTransport.createClient(Wreck)
    .get(url)
    .asResponse()
    .then((res) => {
@@ -27,8 +30,14 @@ client
 });
 ```
 
+## Test
+
+```
+npm test
+```
+
 ## Documentation
-For more examples and API details, see [API documentation](https://nspragg.github.io/http-transport/)
+For more examples and API details, see [API documentation](https://nspragg.github.io/http-transport-wreck/)
 
 To generate a test coverage report:
 
