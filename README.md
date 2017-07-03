@@ -36,9 +36,6 @@ HttpTransport.createClient(Wreck)
 npm test
 ```
 
-## Documentation
-For more examples and API details, see [API documentation](https://nspragg.github.io/http-transport-wreck/)
-
 To generate a test coverage report:
 
 ```
