@@ -81,7 +81,6 @@
     "http-transport": "git+https://git@github.com/nspragg/http-transport.git",
     "koa-compose": "^4.0.0",
     "lodash": "^4.17.4",
-    "request": "2.78.0",
     "wreck": "12.2.2"
   }
 }
